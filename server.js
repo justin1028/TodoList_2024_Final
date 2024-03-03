@@ -1,24 +1,24 @@
 const http = require("http");
 const { v4: uuidv4 } = require("uuid");
-const errorHandle    = require("./errorHandle");
+const errorHandle = require("./errorHandle");
 const successHandler = require("./successHandler");
 
 const todos = [];
 
 const requestListener = (req, res) => {
-       const headers = {
-         "Access-Control-Allow-Headers":
-         "Content-Type, Authorization, Content-Length, X-Requested-With",
-         "Access-Control-Allow-Origin": "*",
-         "Access-Control-Allow-Methods": "PATCH, POST, GET,OPTIONS,DELETE",
-         "Content-Type": "application/json",
-      };
+  const headers = {
+    "Access-Control-Allow-Headers":
+      "Content-Type, Authorization, Content-Length, X-Requested-With",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "PATCH, POST, GET,OPTIONS,DELETE",
+    "Content-Type": "application/json",
+  };
 
   let body = "";
 
   //req.on()是一個監聽事件 可以用來取得傳給Body的資料
   req.on("data", (chunk) => {
-      body += chunk;
+    body += chunk;
   });
 
   if (req.url == "/todos" && req.method == "GET") {
