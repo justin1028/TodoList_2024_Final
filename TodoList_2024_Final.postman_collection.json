@@ -76,7 +76,7 @@
 			"response": []
 		},
 		{
-			"name": "刪除",
+			"name": "刪除單筆",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -97,7 +97,7 @@
 			"response": []
 		},
 		{
-			"name": "編輯",
+			"name": "編輯單筆",
 			"request": {
 				"method": "PATCH",
 				"header": [],
