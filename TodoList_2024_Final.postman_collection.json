@@ -1,0 +1,130 @@
+﻿{
+	"info": {
+		"_postman_id": "83413110-48b1-4d04-9fc4-a2823ff78672",
+		"name": "TodoList_2024_Final_Render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25136728"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-2024-final.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-2024-j7k6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"第一筆代辦\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-2024-final.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-2024-j7k6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-2024-final.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todolist-2024-j7k6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todolist-2024-final.onrender.com/todos/359e7061-2925-47ce-9e55-4c0ab654492f",
+					"protocol": "https",
+					"host": [
+						"todolist-2024-j7k6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"359e7061-2925-47ce-9e55-4c0ab654492f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"這是編輯過的資料\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todolist-2024-final.onrender.com/todos/359e7061-2925-47ce-9e55-4c0ab654492f",
+					"protocol": "https",
+					"host": [
+						"todolist-2024-j7k6",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"359e7061-2925-47ce-9e55-4c0ab654492f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
